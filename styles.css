@@ -1,0 +1,47 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: sans-serif;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pixel-art {
+  width: 160px;
+  height: 160px;
+  display: grid;
+  grid-template-columns: repeat(16, 10px);
+  grid-template-rows: repeat(16, 10px);
+  margin: 0 auto;
+}
+
+.pixel-art.aqua > div {
+  width: 10px;
+  height: 10px;
+}
+
+/* AQUA pixel colors */
+:root {
+  --skin: #ffe0bd;
+  --blue-hair: #2196f3;
+  --eye: #000;
+  --white: #fff;
+  --dress: #3f51b5;
+  --outline: #222;
+}
+
+/* AQUA basic pixel layout (16x16 grid) */
+.pixel-art.aqua {
+  display: grid;
+  grid-template-columns: repeat(16, 10px);
+  grid-template-rows: repeat(16, 10px);
+}
+
+.pixel-art.aqua::before {
+  content: "";
+  display: contents;
+}
+
+.pixel-art.aqua {
+  /* Lista de píxeles con colores */
+}
